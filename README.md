@@ -1,3 +1,22 @@
+# How to build?
+
+If you don't want to check the `COMPILED_BY_ME` folder.
+
+```bash
+# On Ubuntu 22.04
+$ wget https://sh.rustup.rs -O rustup-init
+$ sh rustup-init
+$ sudo apt install openjdk-8-jdk gradle gcc-mingw-w64-x86-64 sdkmanager
+$ source ~/.bashrc
+$ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+$ export ANDROID_SDK_ROOT=/home/pc/Android/Sdk
+$ ./gradlew clean build
+# afterward you need to sign the apk file
+# DO NOT FORGET TO RUN THE EXECUTABLES VIA -s ARG TO ENABLE STOP ON DISCONNECT
+```
+
+
+
 # Gnirehtet (v2.5.1)
 
 This project provides **reverse tethering** over `adb` for Android: it
@@ -247,13 +266,13 @@ Read the [developers page].
 ## Licence
 
     Copyright (C) 2017 Genymobile
-
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
+    
         http://www.apache.org/licenses/LICENSE-2.0
-
+    
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
