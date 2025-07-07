@@ -280,6 +280,7 @@ public final class Main {
         if (routes != null) {
             Collections.addAll(cmd, "--esa", "routes", routes);
         }
+        Collections.addAll(cmd, "--ez", "stopOnDisconnect", "true"); // TODO
         execAdb(serial, cmd);
     }
 
